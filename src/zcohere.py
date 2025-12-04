@@ -9,8 +9,10 @@ def main():
     parser.add_argument("--api-key", type=str, required=True, help="The Cohere API key")
     parser.add_argument("--ziti-identity", type=str, required=True, help="The OpenZiti identity file")
     args = parser.parse_args()
+    # Load the OpenZiti identity
     ztx = openziti.load(args.ziti_identity)
     response = None
+    # Use OpenZiti's monkeypatching to route Cohere API calls through Ziti
     with openziti.monkeypatch():
         co = cohere.Client(args.api_key)
 
@@ -18,6 +20,7 @@ def main():
             model=args.model,
             message=args.message
         )
+    #
     if response:
         print(response.text)
     else:
