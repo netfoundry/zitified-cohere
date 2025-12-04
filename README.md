@@ -1,2 +1,2 @@
 # zitified-cohere
-This is an example zitification of the cohere python sdk api client
+This is an example zitification of the Cohere Python SDK api client
