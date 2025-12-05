@@ -19,7 +19,7 @@ Console.
       ```sudo apt upgrade```
 
       ```sudo apt install python3-pip python3-venv git```
-      
+
    b. ## Build the Example
       On the linux system that will run the Client
       clone the repo
@@ -65,11 +65,13 @@ Console.
 
       ```source cohere/bin/activate```
 
-   b. install openziti and cohere modules
+   b. Install openziti and cohere modules
       ```pip3 install openziti```
       ```pip3 install cohere``` 
 
-   c. execute script ```python zcohere.py --api-key <"your cohere api key"> --ziti-identity <identity json file> --message "Write a haiku about trees" ```
+   c. Execute the script 
+
+   ```python zcohere.py --api-key <"your cohere api key"> --ziti-identity <identity json file> --message "Write a haiku about trees" ```
    
 
    Sample output:
