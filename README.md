@@ -71,7 +71,7 @@ Console.
 
    c. Execute the script 
 
-   ```python zcohere.py --api-key <"your cohere api key"> --ziti-identity <identity json file> --message "Write a haiku about trees" ```
+   ```python3 zcohere.py --api-key <"your cohere api key"> --ziti-identity <identity json file> --message "Write a haiku about trees" ```
    
 
    Sample output:
