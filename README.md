@@ -25,7 +25,7 @@ Console.
       clone the repo
       mkdir ~/repos
       cd ~/repos
-      ```git clone https://github.com/r-caamano/zitified-cohere.git```
+      ```git clone https://github.com/netfoundry/zitified-cohere.git```
       cd zitified-cohere/src
 
 2. Create and enroll a ziti identity place the identity json file in the ~/repos/zitified-cohere/src on the VM created in step 1.
